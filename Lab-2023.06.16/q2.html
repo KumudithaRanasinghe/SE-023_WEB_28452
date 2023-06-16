@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial2</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            getMarks();
+        }
+
+        function getMarks() {
+            var total = 0;
+            for (var i = 0; i < 5; i++) {
+                var marks = parseInt(window.prompt("Enter Marks : "));
+                total += marks;
+            }
+
+            document.write("Total :" + total);
+            documrnt.write("<br>")
+            document.write("Average :" + total / 5);
+            document.write("<br>")
+
+            var button = document.createElement("button");
+            button.innerHTML = "Grade";
+            button.onclick = function() {
+                var avg = total / 5;
+                if (avg < 30) {
+                    window.alert("Congratulations :");
+                } else {
+                    window.alert("Better luck next time");
+                }
+            };
+
+            document.body.appendChild(button);
+        }
+    </script>
+</body>
+</html>
