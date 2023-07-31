@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function red()
+        {
+            document.bgColor="red";
+        }
+        function green()
+        {
+            document.bgColor="green";
+        }
+        function blue()
+        {
+            document.bgColor="blue";
+        }
+        function reset()
+        {
+            document.bgColor="";
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Red" onmouseover="red()" onmouseout="reset()">
+    <input type="button" value="Green" onmouseover="green()" onmouseout="reset()">
+    <input type="button" value="Blue" onmouseover="blue()" onmouseout="reset()">
+</body>
+</html>
